@@ -1,0 +1,8 @@
+user => name, age, email, status, id
+add user
+all users
+single user
+edit 
+del
+ 
+json => data.json
