@@ -1,0 +1,32 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-4">
+    <h3 class="text-center text-primary my-3">add New customers</h3>
+    <form method="post"> 
+        <div class="mb-3">
+            <input name="name" class="form-control" placeholder="Name">
+        </div>
+        <div class="mb-3">
+            <input name="accuName" class="form-control" placeholder="accuName">
+        </div>
+        <div class="mb-3">
+            <input name="balance" class="form-control" placeholder="balance">
+        </div>
+        <div class="mb-3">
+            <input name="transaction" class="form-control" placeholder="transaction">
+        </div>
+        <div class="mb-3">
+            <select name="custActions" class="form-control">
+                <option >please choose your action</option>
+                {{#each custActions}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">Add user</button>
+        </div>
+
+    </form>
+</section>
+{{>footer}}
